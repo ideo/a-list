@@ -1,0 +1,17 @@
+#!/bin/bash
+
+# Set this variable to point at zip extract:
+# datadir=/path/to/A-List/dropbox/dir
+
+# You can use the / escape char before spaces or ()
+# datadir=/Users/peterwinter/Dropbox\ \(IDEO\)/A-List
+
+# Or put the whole thin in quotes. Do not leave a space after =
+datadir="/Users/peterwinter/Dropbox (IDEO)/A-List"
+
+# simlinks are created
+ln -s "$datadir"/1_data/ .
+ln -s "$datadir"/2_plots/ .
+
+# simlinks to make notebooks easier to work with
+ln -s $PWD/src/ ./notebooks/src

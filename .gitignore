@@ -136,3 +136,9 @@ dmypy.json
 
 # Cython debug symbols
 cython_debug/
+
+# symlinks
+1_data
+2_plots
+notebooks/src
+src/src

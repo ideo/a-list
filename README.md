@@ -24,10 +24,15 @@ right now there's two directories:
 - `/notebooks` which is for jupyter notebooks
 - `/src` which is for python code files
 
-Eventually we might also get:
-- `/plots` for figs
-- `/data` for odds and ends
-Those will probably get simlinked to a dropbox folder so we can share the same data files and plots.
+To create symlinks to:
+- `/1_data` for odds and ends
+- `/2_plots` for figs
+
+open the create_symlink script, change the value of the `datadir` variable and then run the script from the command line using `bash create_symlinks`.
+
+check if it worked by looking into one of the symlinks to see if if finds anything `ls 1_data`
+
+If you need to redo the process, delete the existing failed symlinks manually and try again.
 
 ### Don't we have a google drive?
 
