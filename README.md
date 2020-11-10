@@ -41,3 +41,13 @@ once you've got everything install, then just start a notebook server by typing:
 or go into the `pipenv shell` and then type `jupyter notebook`
 
 Once you've explored enough with notebooks then it get's turned into functions and moved into .py files in `/src`.
+
+
+## Potential Datasets
+
+https://www.english-corpora.org/now/
+
+The bloomberg youtube channel + automatic transcript extraction.
+I haven't tried this one but it looks promising: https://pypi.org/project/youtube-transcript-api/
+
+...maybe there are some other youtube channels we could scrape?
