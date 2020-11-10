@@ -1,4 +1,4 @@
-# highlighter
+# A-List
 project A-List or Highlighter repo
 
 ## Environment
@@ -47,6 +47,12 @@ or go into the `pipenv shell` and then type `jupyter notebook`
 
 Once you've explored enough with notebooks then it get's turned into functions and moved into .py files in `/src`.
 
+## Spacy and NLP
+
+[spacy](https://spacy.io/) and [nltk](https://www.nltk.org/) are two popular NLP libraries
+
+go into `pipenv shell`
+and type `python -m spacy download en_core_web_sm` to download the small english corpus.
 
 ## Potential Datasets
 
