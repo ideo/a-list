@@ -142,3 +142,9 @@ cython_debug/
 2_plots
 notebooks/src
 src/src
+
+# databases
+*.db
+
+# texteditor cruft
+.vscode

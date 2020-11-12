@@ -13,5 +13,5 @@ datadir="/Users/peterwinter/Dropbox (IDEO)/A-List"
 ln -s "$datadir"/1_data/ .
 ln -s "$datadir"/2_plots/ .
 
-# simlinks to make notebooks easier to work with
-ln -s $PWD/src/ ./notebooks/src
+# simlinks to make notebooks easier to work with (not currently using)
+#ln -s $PWD/src/ ./notebooks/src
