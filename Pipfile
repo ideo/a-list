@@ -15,6 +15,10 @@ jedi = "*"
 yapf = "*"
 pugsql = "*"
 click = "*"
+beautifulsoup4 = "*"
+selenium = "*"
+seleniumrequests = "*"
+selenium-requests = "*"
 
 [requires]
 python_version = "3.7"
