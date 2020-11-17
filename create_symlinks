@@ -7,7 +7,8 @@
 # datadir=/Users/peterwinter/Dropbox\ \(IDEO\)/A-List
 
 # Or put the whole thin in quotes. Do not leave a space after =
-datadir="/Users/peterwinter/Dropbox (IDEO)/A-List"
+# datadir="/Users/peterwinter/Dropbox (IDEO)/A-List"
+datadir="/Users/ahale/Dropbox (IDEO)/A-List"
 
 # simlinks are created
 ln -s "$datadir"/1_data/ .
