@@ -17,8 +17,10 @@ pugsql = "*"
 click = "*"
 beautifulsoup4 = "*"
 selenium = "*"
-seleniumrequests = "*"
 selenium-requests = "*"
+textblob = "*"
+nltk = "*"
+gensim = "*"
 
 [requires]
 python_version = "3.7"
