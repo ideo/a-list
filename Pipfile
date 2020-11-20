@@ -8,7 +8,6 @@ verify_ssl = true
 [packages]
 jupyter = "*"
 notebook = "*"
-spacy = "*"
 matplotlib = "*"
 seaborn = "*"
 jedi = "*"
@@ -21,6 +20,8 @@ selenium-requests = "*"
 textblob = "*"
 nltk = "*"
 gensim = "*"
+altair = "*"
+sklearn = "*"
 
 [requires]
 python_version = "3.7"
