@@ -1,11 +1,20 @@
 import gensim
 from gensim.parsing.preprocessing import STOPWORDS
+import pathlib
 
 # TODO: get the hard coded path out of here.
-def load_stopwords(stopwords_path = "../1_data/stopwords/stopwords.txt"):
-    with open(stopwords_path, "r") as f:
-        sw = f.read().split()
-    return STOPWORDS.union(set(sw))
+def load_stopwords(stopwords_path = "../1_data/stopwords/"):
+    p = pathlib.Path(stopwords_path)
+    if not p.exists():
+        print(f'Error {stopwords_path} not found')
+        return
+
+    stops = STOPWORDS
+    for f in p.glob('*'):
+        sw = f.open().read().split()
+        stops = stops.union(set(sw))
+
+    return stops
 
 # def preprocess(text, stopwords):
 #     tokens = gensim.utils.simple_preprocess(text,

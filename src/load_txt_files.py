@@ -51,10 +51,11 @@ def assemble_index_files(input_paths, drop_dups=True):
         indexes.append(df_index_part)
 
 
-    df_index = pd.concat(indexes, axis=0)
-    fnames = [str(f).split('.txt')[0] for f in df_index['filename']]
-    df_index['filename'] = fnames
-    df_index_a = df_index.drop(columns=['Unnamed: 0'])
+    df_index_a = pd.concat(indexes, axis=0)
+    fnames = [str(f).split('.txt')[0] for f in df_index_a['filename']]
+    df_index_a['filename'] = fnames
+    if 'Unnamed: 0' in df_index_a.columns:
+        df_index_a = df_index_a.drop(columns=['Unnamed: 0'])
 
     df_index_a['year'] = df_index_a['year'].fillna(0).astype(int)
 
