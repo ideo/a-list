@@ -62,32 +62,33 @@ The'res also a number of notebooks for scaping different data sources. They were
 
 ### Core Datasets
 
-**Crunchbase**
-Alla created lot of these csvs manually using a set of criterion that matched Kathy and Katrin's description of interesting targets. It's our source of The Big List of new places to look into.
+**Crunchbase**: 
+These csvs were created manually using a set of criterion that matched Kathy and Katrin's description of interesting targets. It's our source of The Big List of new places to look into.
 An idea for future development is to use this data to provide more context on CEOs and organizations, but we haven't yet set up code to try and cross-reference it with the other sources since all the organization names are free text and will likely require a fair bit of data-munging efforts.
 
-**Good Leads Articles**
+**Good Leads Articles**:
 Kathy took a list of our current transformational clients and found 34 articles about those clients from 1 to 2 years before they started working with IDEO.
 We downloaded the text by hand. This is the source of most of our analysis.
 
-**NYT Corner Office**
+**NYT Corner Office**:
 This is our reference for "how ceo's sound in interviews".
 This was pretty tricky to scrape and an NYT membership is required. Although NYT indicates that 500+ of these articles were in the collection the online indexes only seemed to have links for 218. We downloaded the text for what we could.
 
-**Earnings Call transcripts from Seeking Alpha**
+**Earnings Call transcripts from Seeking Alpha**:
 Scraped from seeking alpha. We used a trial membership to Seeking Alpha to get this sample of their much larger dataset. 500 transcripts were downloaded. 50,000 (?) or so were indexed. We decided to not scrape further, since they
 
-**Current Transformational Clients**
+**Current Transformational Clients**:
 Like the good leads articles, these aricles are about current clients and were curated and downloaded by hand.
+
 ### Interesting but tangential data we aquired
 
-**Now**
+**Now**:
 https://www.english-corpora.org/now/
 This provides a corpus that can easily scan many many online news articles, but doesn't actually let you download the full text, only surrounding words.
 We invested a couple days in getting a scraping interface set up that can actually download the tables it creates.
 
 
-**IDEO Journal**
+**IDEO Journal**:
 This is our reference for "what IDEO sounds like". It was used in one of our earlier directions but we shifted away from this direction because we increasingly focused on our "good leads" sample.
 A proper index.csv file still needs to be created for this dataset, because it was last featured in our analysis before we settled on a standardized format.
 
