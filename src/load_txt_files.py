@@ -17,6 +17,8 @@ def read_dir_text_files(data_dir, verbose=True):
         fname = fname.split('.txt')[0]
         if fname in skiplist:
             continue
+        if 'index' in fname:
+            continue
         txt = article_path.read_text()
         files.append(fname)
         texts.append(txt)
